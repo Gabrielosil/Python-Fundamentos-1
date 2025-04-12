@@ -43,3 +43,9 @@ num4 = float(input("Digite o segundo número: "))
 soma = num3 + num4
 
 print(soma)
+
+nota1 = float(input("Digite o primeiro nota: "))
+nota2 = float(input("Digite o segunda nota: "))
+
+media = (nota1 + nota2) /2
+print("A média é:", media)
