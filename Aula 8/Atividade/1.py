@@ -7,13 +7,9 @@ continua até o jogador digitar "não".'''
 import random
 
 def jogar_adivinhacao():
-    """
-    Função principal do jogo de adivinhação.
-    O computador sorteia um número e o jogador tenta adivinhar.
-    """
     jogar_novamente = "sim"
 
-    while jogar_novamente.lower() == "sim":
+    while jogar_novamente.lower() in ["sim", "s"]: # Mudança aqui
         numero_secreto = random.randint(1, 10)
         print("\n--- Jogo de Adivinhação ---")
         print("Tente adivinhar o número secreto entre 1 e 10.")
@@ -34,6 +30,5 @@ def jogar_adivinhacao():
 
     print("Obrigado por jogar! Até a próxima.")
 
-# Inicia o jogo
 if __name__ == "__main__":
     jogar_adivinhacao()
